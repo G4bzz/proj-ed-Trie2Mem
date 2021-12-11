@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+/* https://www.canva.com/colors/color-palettes/window-tide/ */
+
+
+@font-face {
+    font-family: 'arconregular';
+    src: url('./fonts/arcon-regular-webfont.woff2') format('woff2'),
+         url('./fonts/arcon-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-app, .game-container{
+    width: 85vw;
+    height: auto;
+    border-radius: 2rem;
+    box-shadow: inset 0 0 40rem #274472, 0 0 1.5rem rgba(0,0,0,0.8);
+    background-color: #5885AF;
+    margin: 3rem auto 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.background-waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 10rem;
+    background: url('./assets/wave.png');
+    background-size: 100rem 10rem;
+    animation: animate 20s linear infinite;
+    margin-top: 2rem;
+    z-index: -1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.botaoPlay button{
+    font-size: 3rem;
+    padding: 0.3rem 0.4rem 0 0.6rem;
+    text-align: center;
+    background-color: #5885af63;
+    border-radius: 0.7rem;
+    border: solid 0.3rem #fff;
+    color: #fff;
+    transition: all 300ms ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+.botaoPlay button:hover{
+    background-color: #5885af63;
+    border: solid 0.3rem #41729F;
+    cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.botaoPlay {
+    top: 2rem;
+    left:2rem;
+    position: absolute;
+}
+
+@media (max-width: 1000px){
+    .botaoPlay{
+        top: 0.5rem;
+        left: 0.5rem;
+    }
+
+    .botaoPlay button{
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 1000px){
+    .container-app{
+        margin-top: 5rem;
+    }
+}
+
+
+@keyframes animate{
+    0% {
+        background-position: 0;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
 }

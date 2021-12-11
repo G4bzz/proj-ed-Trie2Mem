@@ -1,0 +1,456 @@
+.rodada{
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+    font-size: 1.4rem;
+    font-family: arconregular;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.527);
+}
+
+.rodada h1{
+    margin: 0;
+
+}
+
+.top-game{
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteiner-palavras{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.grid-game{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 3rem 0 20rem 0;
+    gap: 0.5rem;
+}
+
+.grid-game p{
+    font-size: 4rem;
+    padding: 0 2rem;
+    margin: 0;
+    font-family: arconregular;
+    text-align: center;
+}
+
+
+.player-input input{
+    font-size: 3rem;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    border: solid 0.2rem #fff;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.75);
+    color: #000;
+}
+
+.player-input button{
+    font-size: 2.5rem;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border-radius: 1rem;
+    border: solid 0.5rem #fff;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.75);
+    background-color: #5885AF;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 250ms ease-in-out;
+}
+
+.player-input button:hover{
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.9);
+    background-color: #fff;
+    color: #5885AF;
+}
+
+
+.grid-game div{ /* ALTERAR, LIMITE 23 PALAVRAS */
+    max-width: 44rem;
+    display: flex;
+    flex-flow: column wrap;
+    border-radius: 1rem;
+    border: solid 0.2rem #fff;
+    color: #fff;
+    text-shadow: -0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.575);
+}
+
+
+.player-input{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    font-family: arconregular;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+
+.instrucoes-jogada{
+    font-size: 6rem;
+    padding: 0 2rem;
+    font-family: arconregular;
+    text-align: center;
+    margin-bottom: 5rem;
+    color: #fff;
+    text-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.527);
+}
+
+.botaoResult{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+
+
+.botaoResult button{
+    font-size: 4rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    margin-top: 10rem;
+    padding: 0.3rem 1rem;
+    border-radius: 0.8rem;
+    border: solid 0.3rem #fff;
+    cursor: pointer;
+    color: #5885AF;
+    background-color: #fff; 
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.475);
+    transition: all 250ms ease-in-out;
+}
+
+.botaoResult button:hover{
+    box-shadow:  0 0 1rem rgba(0, 0, 0, 0.7);
+    background-color: #5885AF;
+    color: #fff;
+    text-shadow: 0 0 0.575rem rgba(0, 0, 0, 0.6);
+}
+
+.junk{
+    display: none;
+}
+
+.result{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.grid-result{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.lista-res{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    font-family: arconregular;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.527);
+}
+
+.lista-res h1{
+   font-size: 5rem;
+}
+
+.lista-res ul{
+    padding-left: 0;
+    font-size: 4rem;
+    margin-top: 0;
+    background-color: #c3e0e53f;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+}
+
+.lista-res{
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+
+.show-acertos{
+    font-size: 4rem;
+    font-family: arconregular;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.527);
+}
+.show-acertos h3{
+    margin: 0 0 0 0;
+}
+
+.show-acertos span{
+    color: #00ccff;
+}
+
+.game-over{
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.game-over h4{
+    margin: 0;
+}
+
+.botaoProxRod{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.botaoProxRod button {
+    font-size: 4rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    padding: 0.3rem 1rem;
+    border-radius: 0.8rem;
+    border: solid 0.3rem #fff;
+    cursor: pointer;
+    color: #5885AF;
+    background-color: #fff; 
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.475);
+    transition: all 250ms ease-in-out;
+}
+
+.botaoProxRod button:hover{
+    box-shadow:  0 0 1rem rgba(0, 0, 0, 0.7);
+    background-color: #5885AF;
+    color: #fff;
+    text-shadow: 0 0 0.575rem rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 1700px){
+    .lista-res h1{
+        font-size: 4.5rem;
+    }
+
+    .show-acertos h3{
+        font-size: 3rem;
+    }
+    
+    .botaoProxRod button{
+        font-size: 3rem;
+    }
+
+    .lista-res li{
+        font-size: 3rem;
+    }
+
+}
+
+@media (max-width: 930px){
+    .lista-res h1{
+        font-size: 3.5rem;
+    }
+
+}
+
+@media (max-width: 730px){
+    .lista-res h1{
+        font-size: 3rem;
+    }
+
+}
+
+@media (max-width: 620px){
+    .lista-res h1{
+        font-size: 2.5rem;
+    }
+
+}
+
+@media (max-width: 1600px){
+    .grid-game{
+        grid-template-columns: 1fr 1fr;
+        padding: 0 2rem;
+        margin: 2rem 0 7rem 0;
+    }
+    
+    .botaoResult{
+        margin: 0 0 4rem 0;
+        padding-bottom: 5rem;
+        padding-top: 0;
+    }
+
+    .instrucoes-jogada h4{
+        margin-bottom: 1rem;
+    }
+    
+}
+
+@media (max-width: 1266px){
+    .instrucoes-jogada{
+        font-size: 5rem;
+    }
+
+    .grid-game{
+        padding: 0 2rem;
+        margin: 5rem 0 5rem 0;
+    }
+}
+
+@media (max-width: 1200px){
+    .game-logo{
+        font-size: 6rem;
+    }
+    .instrucoes-jogada{
+        font-size: 4rem;
+    }
+}
+
+
+@media (max-width: 1063px){
+    .botaoResult button{
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .botoes-container{
+        padding-bottom: 10rem;
+    }
+
+    .instrucoes-jogada {
+        margin-bottom: 1rem;
+    }
+
+    .instrucoes-jogada h4{
+        margin-bottom: 1rem;
+    }
+    
+    .grid-game{
+        grid-template-columns: 1fr;
+        padding: 0 2rem 2rem 2rem;
+    }
+    
+    .grid-game p{
+        font-size: 3rem;
+    }
+    
+}
+
+
+@media (max-width: 956px){
+    .game-logo h1{
+        font-size: 6rem;
+    }
+
+    .lista-res h1{    
+        margin-bottom: 1rem;
+    }
+
+    .show-acertos h3{
+        font-size: 3.5rem;
+        padding: 0 2rem;
+    }
+
+    
+    .botaoResult button{
+        margin-top: 3rem;
+    }
+    
+}
+
+
+@media (max-height: 670px){
+    .grid-game{
+        margin: 1rem 0 1rem 0;
+    }
+
+    .grid-game p{
+        font-size: 2.5rem;
+        padding: 0 1rem;
+    }
+    
+    
+    .player-input input{
+        font-size: 2rem;
+    }
+    
+    .player-input button{
+        font-size: 2rem;
+    }
+
+    .botaoResult{
+        margin-top: 3rem;
+    }
+    
+    .instrucoes-jogada h4{
+        font-size: 3rem;
+    }
+    
+    .lista-res li{
+        font-size: 2rem;
+    }
+    
+    .lista-res ul{
+        padding: 1rem;
+    }
+    
+}
+
+
+@media (max-width: 506px){
+    .grid-result{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        height: 50vh;
+        overflow-y: auto;
+    }
+
+    .grid-game{
+        font-size: 2.5rem;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .player-input input{
+        font-size: 2.2rem;
+    }
+
+    .instrucoes-jogada{
+        font-size: 4rem;
+    }
+
+    .fechar-tela button{
+        font-size: 1.5rem;
+    }
+    
+    .rodada{
+        font-size: 1.2rem;
+    }
+
+    .game-logo h3{
+        font-size: 3rem;
+    }
+
+
+    .lista-res h1{
+        font-size: 3rem;
+    }
+
+    .botoes-container{
+        margin-top: 5rem;
+        padding-bottom: 3rem;
+    }
+    
+    .botoes-container button{
+        font-size: 2rem;
+    }
+
+    .menu-container{
+        margin-top: 15rem;
+    }
+}

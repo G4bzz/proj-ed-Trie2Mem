@@ -1,0 +1,63 @@
+.container-manual{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.manual{
+    height: 65vh;
+    width: 80vw;
+    overflow-y: auto;
+    margin: 2rem 0 4rem;
+    padding: 0 2.5rem;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+
+    font-family: arconregular;
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 0 0 0.5rem rgba(0, 0, 0, 1);
+    
+    background-color: #7e929544;
+    border: solid 0.9rem #c3e0e500;
+    border-radius: 2rem;
+}
+
+.manual h1{
+    text-align: center;
+    font-size: 5rem;
+}
+.manual h1, .manual h1, .manual h2, .manual h3, .manual h4{
+    color: #fff;
+    text-shadow: -0.3rem 0.3rem 0 rgba(0, 119, 255, 1);
+}
+
+.manual img{
+    display: block;
+    margin: 0 auto;
+    max-width: 60vw;
+}
+
+.manual span{
+    color: red;
+}
+
+* { /* Ajuste para firefox */
+    scrollbar-width: 1rem;
+    scrollbar-color: rgba(255, 255, 255, 0) #274472;
+}
+
+/* Ajuste para chrome, opera e safari */
+*::-webkit-scrollbar {
+    width: 1rem;
+}
+  
+*::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0);
+}
+  
+*::-webkit-scrollbar-thumb {
+    background-color: #274472;
+    border-radius: 2rem;
+}
