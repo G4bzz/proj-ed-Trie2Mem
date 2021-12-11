@@ -5,11 +5,11 @@
 - Roniclay Rodrigues
 - Arthur Franklin
 
-> Link para jogar o jogo: [Clique aqui!](https://trie2mem.netlify.app/){:target="_blank"}
+> Link para jogar o jogo: [Clique aqui!](https://trie2mem.netlify.app/)
 
-> Vídeo de teste do jogo: [Clique aqui!](https://youtu.be/De1CXug5m3k){:target="_blank"}
+> Vídeo de teste do jogo: [Clique aqui!](https://youtu.be/De1CXug5m3k)
 
-> Vídeo aspectos técnicos: [Clique aqui!](https://youtu.be/FXrVhwf9vBI){:target="_blank"}
+> Vídeo aspectos técnicos: [Clique aqui!](https://youtu.be/FXrVhwf9vBI)
 
 ## Sobre o Jogo
 O Trie2Mem possui um design responsivo, o mesmo pode ser acessado em computadores com diferentes resoluções e em (alguns) dispositivos móveis.
